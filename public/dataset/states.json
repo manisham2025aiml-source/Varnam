@@ -1,0 +1,547 @@
+[
+  {
+    "id": "IN-TN",
+    "slug": "tamil-nadu",
+    "name": "Tamil Nadu",
+    "capital": "Chennai",
+    "zone": "South",
+    "tagLine": "Where craftsmanship carries centuries of temple memory and sacred geometry.",
+    "culturalStory": "From the Chola dynasty bronze casting guilds along the Kaveri delta to the gold zari looms of Kanchipuram, Tamil Nadu crafts have functioned not as mere decorative objects, but as sacred embodiments of Agamic architecture, music, and divine proportions passed through generational sthapathis and weavers.",
+    "accentColor": "#9E2A2B",
+    "secondaryColor": "#C59B27",
+    "motifName": "Gopuram Silhouette & Kolam Mandala",
+    "motifSvg": "M12 2L4 22h16L12 2zm0 4l5 13H7l5-13z",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "swamimalai-bronze-nataraja",
+      "tanjore-painting-krishna",
+      "kanchipuram-silk-sari",
+      "pattamadai-fine-mat",
+      "thanjavur-bobblehead-doll"
+    ],
+    "featuredArtisanIds": [
+      "rajendran-sthapathi",
+      "meenakshi-ammal",
+      "vadivelu-weaver"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Brihadeeswara Temple (Thanjavur)",
+        "category": "Monuments & Architecture",
+        "description": "1,000-year-old Chola granite architectural marvel with single-stone 80-tonne kumbam capstone.",
+        "iconName": "Landmark"
+      },
+      {
+        "title": "Margazhi Music & Natyanjali Season",
+        "category": "Festivals & Dance",
+        "description": "World’s largest classical music and Bharatanatyam festival celebrating temple arts.",
+        "iconName": "Sparkles"
+      },
+      {
+        "title": "Kaveri River Sacred Delta Weaving",
+        "category": "Living Traditions",
+        "description": "Generational silk and korai grass harvest communities along the fertile Kaveri banks.",
+        "iconName": "Waves"
+      }
+    ],
+    "giCount": 56,
+    "artisanCount": 24500
+  },
+  {
+    "id": "IN-RJ",
+    "slug": "rajasthan",
+    "name": "Rajasthan",
+    "capital": "Jaipur",
+    "zone": "North",
+    "tagLine": "The vibrant heart of desert kingdoms, mineral glazes, and royal master guilds.",
+    "culturalStory": "Forged across the golden sands of the Thar Desert, Rajasthani crafts reflect the vibrant defiance of nature through color. The Kachwaha, Rathore, and Sisodia royal courts fostered master guilds who mastered non-clay quartz blue pottery, pure gold-on-glass Thewa secrets, and mud-resist Dabu block prints.",
+    "accentColor": "#C85A32",
+    "secondaryColor": "#1B2A4A",
+    "motifName": "Jharokha Lattice & Floral Buta",
+    "motifSvg": "M3 21h18M5 21V7l7-4 7 4v14M9 10a3 3 0 0 1 6 0v4a3 3 0 0 1-6 0v-4z",
+    "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "jaipur-blue-pottery-vase",
+      "bagru-dabu-block-textile",
+      "thewa-gold-pendant",
+      "kathputli-rajasthani-puppet",
+      "pichwai-shrinathji-painting"
+    ],
+    "featuredArtisanIds": [
+      "kripal-kumbhakar",
+      "ramesh-chhipa",
+      "giriraj-soni"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Amber & Mehrangarh Forts",
+        "category": "Monuments & Architecture",
+        "description": "Red sandstone and marble citadels preserving Mughal-Rajput fresco ceilings and mirror work.",
+        "iconName": "Shield"
+      },
+      {
+        "title": "Pushkar & Desert Heritage Fairs",
+        "category": "Festivals & Dance",
+        "description": "Living folk gatherings featuring Kalbelia dancers, Manganiyar music, and craft caravans.",
+        "iconName": "Flame"
+      },
+      {
+        "title": "Chhipa Clan Natural Dye Wells",
+        "category": "Living Traditions",
+        "description": "Centuries-old community wells in Bagru dedicated to riverbed indigo and harda washing.",
+        "iconName": "Droplets"
+      }
+    ],
+    "giCount": 38,
+    "artisanCount": 38000
+  },
+  {
+    "id": "IN-GJ",
+    "slug": "gujarat",
+    "name": "Gujarat",
+    "capital": "Gandhinagar",
+    "zone": "West",
+    "tagLine": "Where castor seed sap turns to liquid silk and double-ikat weaves defy time.",
+    "culturalStory": "From the salt flats of the Rann of Kutch to the ancient trading ports of Cambay and Patan, Gujarat’s craft history is one of unmatched technical precision. The 8-century-old Salvi Patan Patola technique weaves both sides identical, while the Khatri masters of Nirona keep the world’s only surviving Roghan castor art alive.",
+    "accentColor": "#1B4965",
+    "secondaryColor": "#DDA15E",
+    "motifName": "Ajrakh Jali & Bandhani Constellation",
+    "motifSvg": "M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-5-6.5 5 2-7.5L2 9h7z",
+    "heroImage": "https://images.unsplash.com/photo-1609137144822-4a004eb7c9a4?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "nirona-roghan-tree-of-life",
+      "patan-patola-double-ikat",
+      "mata-ni-pachedi-shrine",
+      "ajrakhpur-block-stole"
+    ],
+    "featuredArtisanIds": [
+      "abdul-gafur-khatri",
+      "paresh-salvi"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Rani ki Vav (The Queen’s Stepwell)",
+        "category": "Monuments & Architecture",
+        "description": "11th-century Solanki subterranean inverted temple carved with over 500 principal sculptures.",
+        "iconName": "Layers"
+      },
+      {
+        "title": "Rann Utsav & Kutch White Desert",
+        "category": "Festivals & Dance",
+        "description": "Under the full moon, nomadic Kutchi embroiderers showcase Ahir, Rabari, and Roghan crafts.",
+        "iconName": "Moon"
+      },
+      {
+        "title": "Salvi Family Sanskrit Patola Formulas",
+        "category": "Living Traditions",
+        "description": "Secret mathematical dye-tying calculations preserved in palm-leaf manuscripts.",
+        "iconName": "Scroll"
+      }
+    ],
+    "giCount": 32,
+    "artisanCount": 29000
+  },
+  {
+    "id": "IN-WB",
+    "slug": "west-bengal",
+    "name": "West Bengal",
+    "capital": "Kolkata",
+    "zone": "East",
+    "tagLine": "The soul of burnt terracotta, mythological Baluchari jacquards, and nomadic Dokra.",
+    "culturalStory": "In the fertile soils of the Bengal delta and the laterite red earth of Bankura, crafts have evolved as living expressions of folk storytelling. Bishnupur’s Malla kings fostered terracotta temples and Baluchari silks carrying epics in their pallus, while nomadic Dhokra metallurgists preserved 4,000-year-old Indus Valley lost-wax metallurgy.",
+    "accentColor": "#8B263E",
+    "secondaryColor": "#D4AF37",
+    "motifName": "Terracotta Temple Panel & Paisley Kalka",
+    "motifSvg": "M12 3c-4.97 0-9 4.03-9 9 0 6 9 9 9 9s9-3 9-9c0-4.97-4.03-9-9-9z",
+    "heroImage": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "bankura-terracotta-horse",
+      "baluchari-ramayana-saree",
+      "shantiniketan-leather-tote",
+      "bikna-dokra-tribal-lamp",
+      "kantha-vintage-quilt"
+    ],
+    "featuredArtisanIds": [
+      "biren-kumbhakar",
+      "ananya-karmakar"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Bishnupur Terracotta Temples",
+        "category": "Monuments & Architecture",
+        "description": "Curved Jor-Bangla roofs adorned with thousand-panel burnt-earth mythological reliefs.",
+        "iconName": "Columns"
+      },
+      {
+        "title": "Durga Puja Heritage Carnival",
+        "category": "Festivals & Dance",
+        "description": "UNESCO Intangible Cultural Heritage public installation art festival by Kumartuli sculptors.",
+        "iconName": "Crown"
+      },
+      {
+        "title": "Shantiniketan Sriniketan Craft Ashram",
+        "category": "Living Traditions",
+        "description": "Rabindranath Tagore’s rural reconstruction center uniting fine art with village empowerment.",
+        "iconName": "BookOpen"
+      }
+    ],
+    "giCount": 28,
+    "artisanCount": 34000
+  },
+  {
+    "id": "IN-JK",
+    "slug": "jammu-and-kashmir",
+    "name": "Jammu & Kashmir",
+    "capital": "Srinagar / Jammu",
+    "zone": "North",
+    "tagLine": "Spun from Himalayan mountain cloud-fleece, walnut relief, and gilded Chinar lacquer.",
+    "culturalStory": "Nestled between the Pir Panjal and Himalayan ranges, Kashmiri craft tradition was transformed by 14th-century mystic Mir Sayyid Ali Hamadani and Sultan Zain-ul-Abidin, who brought master artisans from Persia and Samarkand. Changthangi pashmina combed at 14,000 feet, Sakhtsazi papier-mâché, and seasoned walnut wood carvings remain unmatched in global luxury.",
+    "accentColor": "#2B4162",
+    "secondaryColor": "#D4A373",
+    "motifName": "Chinar Leaf & Badam Paisley",
+    "motifSvg": "M12 2L9 8l-6 1 4.5 4.5L6 20l6-3.5L18 20l-1.5-6.5L21 9l-6-1z",
+    "heroImage": "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "kashmir-kani-pashmina-shawl",
+      "kashmir-papier-mache-globe",
+      "walnut-wood-carved-box"
+    ],
+    "featuredArtisanIds": [
+      "ghulam-nabi-kani",
+      "farooq-papier-mache"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Dal Lake & Mughal Floating Gardens",
+        "category": "Monuments & Architecture",
+        "description": "Shalimar and Nishat Bagh terraced water gardens shaded by 400-year-old royal Chinar trees.",
+        "iconName": "Compass"
+      },
+      {
+        "title": "Talim Weaving Cryptography",
+        "category": "Living Traditions",
+        "description": "Ancient coded scripts read aloud by Master Ustads to guide loom weavers knot-by-knot.",
+        "iconName": "Binary"
+      },
+      {
+        "title": "Changpa Nomadic Shepherds of Changthang",
+        "category": "Living Traditions",
+        "description": "High-altitude nomads safeguarding the delicate winter underdown fleece of the Capra hircus goat.",
+        "iconName": "Mountain"
+      }
+    ],
+    "giCount": 15,
+    "artisanCount": 21000
+  },
+  {
+    "id": "IN-OR",
+    "slug": "odisha",
+    "name": "Odisha",
+    "capital": "Bhubaneswar",
+    "zone": "East",
+    "tagLine": "Sacred palm leaf incisions, Jagannath cloth murals, and silver hair-fine filigree.",
+    "culturalStory": "Odisha’s craft heritage is intimately bound to the sacred precinct of the Jagannath Temple in Puri and the Kalinga maritime trade routes. In Raghurajpur heritage village, every home is an open atelier where Chitrakars grind conch shells and volcanic minerals to paint on tamarind-primed cloth, while Cuttack’s Tarakasi artisans draw pure silver into gossamer webs.",
+    "accentColor": "#8C3D2B",
+    "secondaryColor": "#E0E1DD",
+    "motifName": "Konark Wheel & Tree of Life",
+    "motifSvg": "M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z",
+    "heroImage": "https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "raghurajpur-pattachitra-scroll",
+      "cuttack-tarakasi-silver-peacock",
+      "pipili-applique-canopy"
+    ],
+    "featuredArtisanIds": [
+      "akshaya-chitrakar",
+      "pramod-maharana"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Sun Temple of Konark",
+        "category": "Monuments & Architecture",
+        "description": "13th-century colossal stone chariot of the Sun God with 24 intricately sculpted sundial wheels.",
+        "iconName": "Sun"
+      },
+      {
+        "title": "Ratha Yatra of Puri",
+        "category": "Festivals & Dance",
+        "description": "World-famous chariot festival adorned with miles of Pipili appliqué canopies and wooden idols.",
+        "iconName": "Shield"
+      },
+      {
+        "title": "Raghurajpur Heritage Craft Village",
+        "category": "Living Traditions",
+        "description": "India’s first designated craft village where every resident is an artist practicing Gotipua and Pattachitra.",
+        "iconName": "Home"
+      }
+    ],
+    "giCount": 26,
+    "artisanCount": 22000
+  },
+  {
+    "id": "IN-KA",
+    "slug": "karnataka",
+    "name": "Karnataka",
+    "capital": "Bengaluru",
+    "zone": "South",
+    "tagLine": "Ivory wood polished with screw pine leaves, royal Mysore gold zari, and Bidar silver soil.",
+    "culturalStory": "From the Hoysala stone temples of Belur to the Vijayanagara ruins of Hampi, Karnataka crafts represent royal patron-guild excellence. Tipu Sultan invited Persian masters to tutor Channapatna toy turners in vegetable lac; Bidar sultans pioneered zinc alloys blackened with fort soil; and Mysore Maharajas codified state silk looms in 1912.",
+    "accentColor": "#3A5A40",
+    "secondaryColor": "#C59B27",
+    "motifName": "Ganda Bherunda & Hoysala Scroll",
+    "motifSvg": "M12 4l3 5 5 1-4 4 1 6-5-3-5 3 1-6-4-4 5-1z",
+    "heroImage": "https://images.unsplash.com/photo-1600100397608-f010e42f9b1c?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "channapatna-lacquer-rocking-horse",
+      "mysore-crepe-silk-saree",
+      "bidriware-silver-vase"
+    ],
+    "featuredArtisanIds": [
+      "syed-channapatna",
+      "narasimha-bidri"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Mysore Amba Vilas Palace",
+        "category": "Monuments & Architecture",
+        "description": "Indo-Saracenic palace illuminated by 100,000 bulbs with stained glass ceilings and silver doors.",
+        "iconName": "Castle"
+      },
+      {
+        "title": "Hampi Vijayanagara Capital Ruins",
+        "category": "Monuments & Architecture",
+        "description": "UNESCO World Heritage boulder landscape of 15th-century stone chariot temples and bazaar arcades.",
+        "iconName": "Landmark"
+      },
+      {
+        "title": "Aale Mara (Wrightia) Sustainable Groves",
+        "category": "Living Traditions",
+        "description": "Non-toxic softwood harvested specifically for safe, baby-friendly Channapatna playthings.",
+        "iconName": "Trees"
+      }
+    ],
+    "giCount": 47,
+    "artisanCount": 31000
+  },
+  {
+    "id": "IN-KL",
+    "slug": "kerala",
+    "name": "Kerala",
+    "capital": "Thiruvananthapuram",
+    "zone": "South",
+    "tagLine": "Secret temple mirror metallurgy, golden kasavu borders, and backwater bell bronze.",
+    "culturalStory": "Along the emerald lagoons and monsoon forests of God’s Own Country, craftsmanship is guided by Vedic metallurgy and sacred simplicity. The secret front-surface copper-tin alloy of Aranmula mirrors produces a reflection free of double-refraction, while pit looms of Balaramapuram weave pristine unbleached cotton with pure zari.",
+    "accentColor": "#2C5E43",
+    "secondaryColor": "#DDA743",
+    "motifName": "Nila Lamp & Elephant Caparison",
+    "motifSvg": "M12 2a4 4 0 0 0-4 4c0 3 4 8 4 8s4-5 4-8a4 4 0 0 0-4-4z",
+    "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "aranmula-kannadi-vaalkannadi",
+      "balaramapuram-kasavu-saree",
+      "mannar-bell-metal-uruli"
+    ],
+    "featuredArtisanIds": [
+      "parameswaran-aranmula",
+      "krishnan-bellmetal"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Padmanabhaswamy Temple (Thiruvananthapuram)",
+        "category": "Monuments & Architecture",
+        "description": "Dravidian stone corridor of 365 carved pillars and gold-plated flagstaff facing the Arabian Sea.",
+        "iconName": "Landmark"
+      },
+      {
+        "title": "Kathakali & Theyyam Ritual Theater",
+        "category": "Festivals & Dance",
+        "description": "Sacred dance dramas featuring elaborate chutti rice-paste facial makeup and hand-carved wooden headgear.",
+        "iconName": "Mask"
+      },
+      {
+        "title": "Secret Aranmula Metallurgy Vishwakarma Guild",
+        "category": "Living Traditions",
+        "description": "Only five master families hold the exact copper-tin alloy proportion handed down through temple lore.",
+        "iconName": "Sparkles"
+      }
+    ],
+    "giCount": 35,
+    "artisanCount": 20500
+  },
+  {
+    "id": "IN-AP",
+    "slug": "andhra-pradesh",
+    "name": "Andhra Pradesh & Telangana",
+    "capital": "Amaravati / Hyderabad",
+    "zone": "South",
+    "tagLine": "Freehand bamboo pen flora, softwood village deities, and Pochampally ikat geometry.",
+    "culturalStory": "Centuries of Kakatiya and Golconda royal patronage cultivated two of India’s most sophisticated textile marvels. Srikalahasti temple artisans use milk-treated cotton and tamarind-stick kalams to hand-draw divine epics, while weavers of Pochampally knot and tie-dye silk yarn into mathematical diamond patterns.",
+    "accentColor": "#A34323",
+    "secondaryColor": "#E2B855",
+    "motifName": "Kalamkari Tree of Life & Peacock",
+    "motifSvg": "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z",
+    "heroImage": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "srikalahasti-kalamkari-ramayana",
+      "kondapalli-dasavataram-set",
+      "pochampally-ikat-patola-saree"
+    ],
+    "featuredArtisanIds": [
+      "lakshmaiah-kalamkari",
+      "venkatesh-kondapalli"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Lepakshi Temple & Hanging Pillar",
+        "category": "Monuments & Architecture",
+        "description": "16th-century Vijayanagara monolithic Nandi bull and ceiling frescoes that inspire Kalamkari patterns.",
+        "iconName": "Landmark"
+      },
+      {
+        "title": "Charminar & Laad Bazaar Lacquer",
+        "category": "Monuments & Architecture",
+        "description": "Historic 1591 monument surrounded by hereditary glass and stone-studded lacquer bangle ateliers.",
+        "iconName": "Store"
+      },
+      {
+        "title": "Tella Poniki Softwood Sustainable Reforestation",
+        "category": "Living Traditions",
+        "description": "Kondapalli toy makers collaborate with forest departments to nurture native lightweight timber.",
+        "iconName": "Trees"
+      }
+    ],
+    "giCount": 34,
+    "artisanCount": 27000
+  },
+  {
+    "id": "IN-AS",
+    "slug": "assam",
+    "name": "Assam",
+    "capital": "Dispur",
+    "zone": "North-East",
+    "tagLine": "Golden Muga silk that outlasts generations, sacred Majuli river masks, and terracotta.",
+    "culturalStory": "In the lush Brahmaputra River valley, Assam’s craft identity is rooted in endemic flora and Vaishnavite monasteries (Sattras). Assam Muga silk is naturally golden, glossy, and becomes more lustrous with every wash over a lifespan of 50+ years. On Majuli Island, monks make bamboo-clay theater masks to enact 500-year-old saintly plays.",
+    "accentColor": "#1A535C",
+    "secondaryColor": "#DDA743",
+    "motifName": "Jaapi Conical Hat & Kaziranga Rhino",
+    "motifSvg": "M12 2L2 22h20L12 2zm0 6l5 10H7l5-10z",
+    "heroImage": "https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "assam-muga-golden-silk-mekhela",
+      "majuli-bamboo-sattriya-mask",
+      "asharikandi-hatima-terracotta"
+    ],
+    "featuredArtisanIds": [
+      "hemchandra-goswami",
+      "pratima-baruah"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Majuli River Island & Sattras",
+        "category": "Monuments & Architecture",
+        "description": "World’s largest inhabited river island and center of 15th-century neo-Vaishnavite culture.",
+        "iconName": "Waves"
+      },
+      {
+        "title": "Bihu Harvest & Weaving Rhythms",
+        "category": "Festivals & Dance",
+        "description": "Spring festival celebrated with indigenous handloom gamosas presented as gestures of reverence.",
+        "iconName": "Heart"
+      },
+      {
+        "title": "Wild Som Tree Silkworm Sanctuaries",
+        "category": "Living Traditions",
+        "description": "Outdoor forest cocoon rearing of the rare Antheraea assamensis caterpillar.",
+        "iconName": "Feather"
+      }
+    ],
+    "giCount": 14,
+    "artisanCount": 18000
+  },
+  {
+    "id": "IN-UP",
+    "slug": "uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "capital": "Lucknow",
+    "zone": "North",
+    "tagLine": "Awadhi shadow-embroidery, Varanasi pure gold brocades, and clay-distilled ittar.",
+    "culturalStory": "From the sacred Ganga ghats of Kashi to the Nawabi salons of Lucknow and the copper stills of Kannauj, Uttar Pradesh is an epicenter of imperial and spiritual craft mastery. Kadhwa weaving inserts individual pure gold motifs into gossamer silks without loose floats, while 32 shadow stitches transform white muslin into Chikankari poetry.",
+    "accentColor": "#6B2D5C",
+    "secondaryColor": "#D4AF37",
+    "motifName": "Paisley Shikargah & Jali Arcades",
+    "motifSvg": "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z",
+    "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "banarasi-kadhwa-gold-zari-saree",
+      "lucknowi-chikankari-kurta",
+      "kannauj-deg-bhapka-mitti-ittar",
+      "moradabad-engraved-brass-vase"
+    ],
+    "featuredArtisanIds": [
+      "haji-munna-ansari",
+      "begum-naseem",
+      "ramesh-tandon-ittar"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Varanasi Ghats & Ganga Aarti",
+        "category": "Living Traditions",
+        "description": "Oldest living city where weaver lanes resonate with the rhythmic clatter of jacquard pit looms.",
+        "iconName": "Flame"
+      },
+      {
+        "title": "Bara Imambara & Rumi Darwaza (Lucknow)",
+        "category": "Monuments & Architecture",
+        "description": "Architectural wonder built without iron or beams, echoing the refined aesthetics of Chikankari.",
+        "iconName": "Landmark"
+      },
+      {
+        "title": "Kannauj Deg-Bhapka Hydro-Distillation",
+        "category": "Living Traditions",
+        "description": "Centuries-old copper cauldrons capturing the scent of first monsoon rain on baked earth.",
+        "iconName": "Droplets"
+      }
+    ],
+    "giCount": 54,
+    "artisanCount": 46000
+  },
+  {
+    "id": "IN-MH",
+    "slug": "maharashtra",
+    "name": "Maharashtra",
+    "capital": "Mumbai",
+    "zone": "West",
+    "tagLine": "Peacock pallu Paithani silks, Warli sacred rice murals, and Kolhapuri leathercraft.",
+    "culturalStory": "Flanked by the Sahyadri mountains and Maratha citadels, Maharashtra’s crafts balance tribal earth consciousness with Peshwa court luxury. Paithani silk saris feature radiant oblique tapestry weaving with solid gold peacock borders, while Warli indigenous tribes paint their community harvest circles using rice flour on mud walls.",
+    "accentColor": "#932F6D",
+    "secondaryColor": "#F6BD60",
+    "motifName": "Mor (Peacock) & Warli Circle",
+    "motifSvg": "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z",
+    "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1600&q=80",
+    "signatureCraftIds": [
+      "paithani-peacock-pallu-saree",
+      "warli-rice-paste-tarpa-painting",
+      "kolhapuri-tanned-chappal"
+    ],
+    "featuredArtisanIds": [
+      "uttam-bhosale",
+      "jivya-soma-warli"
+    ],
+    "culturalHighlights": [
+      {
+        "title": "Ajanta & Ellora Rock-Cut Caves",
+        "category": "Monuments & Architecture",
+        "description": "Monumental basalt rock temples preserving ancient Buddhist frescoes and Kailash temple monolith.",
+        "iconName": "Landmark"
+      },
+      {
+        "title": "Ganesh Chaturthi Artisanal Clay Moulders",
+        "category": "Festivals & Dance",
+        "description": "Centuries-old Pen town craft clusters sculpting eco-friendly Shadu clay deities.",
+        "iconName": "Sparkles"
+      }
+    ],
+    "giCount": 36,
+    "artisanCount": 26000
+  }
+]

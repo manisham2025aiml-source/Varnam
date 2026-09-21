@@ -1,0 +1,272 @@
+[
+  {
+    "index": 1,
+    "slug": "tamil-nadu",
+    "name": "Tamil Nadu",
+    "tagLine": "Where temples, textiles and traditional craftsmanship tell stories across generations.",
+    "accentColor": "#6E2A38",
+    "chipsCount": 5,
+    "stickersCount": 5
+  },
+  {
+    "index": 2,
+    "slug": "kerala",
+    "name": "Kerala",
+    "tagLine": "Where lush landscapes, rich traditions and skilled hands create timeless crafts.",
+    "accentColor": "#1E3A2B",
+    "chipsCount": 6,
+    "stickersCount": 6
+  },
+  {
+    "index": 3,
+    "slug": "karnataka",
+    "name": "Karnataka",
+    "tagLine": "Where palace soil blackens silver inlay and Wrightia wood spins into non-toxic toys.",
+    "accentColor": "#7A2021",
+    "chipsCount": 5,
+    "stickersCount": 5
+  },
+  {
+    "index": 4,
+    "slug": "andhra-pradesh",
+    "name": "Andhra Pradesh",
+    "tagLine": "Where bamboo pens sketch divine epics in milk and Etikoppaka seeds turn lacquer into ivory sheen.",
+    "accentColor": "#8C2D19",
+    "chipsCount": 3,
+    "stickersCount": 2
+  },
+  {
+    "index": 5,
+    "slug": "telangana",
+    "name": "Telangana",
+    "tagLine": "Where mathematical double-ikat aligns on the loom and Nirmal teak glows with herbal lacquer.",
+    "accentColor": "#9C27B0",
+    "chipsCount": 2,
+    "stickersCount": 1
+  },
+  {
+    "index": 6,
+    "slug": "rajasthan",
+    "name": "Rajasthan",
+    "tagLine": "Where royal heritage, vibrant textiles and exquisite crafts come alive in every creation.",
+    "accentColor": "#800020",
+    "chipsCount": 6,
+    "stickersCount": 6
+  },
+  {
+    "index": 7,
+    "slug": "gujarat",
+    "name": "Gujarat",
+    "tagLine": "Where vibrant textiles, intricate mirror work and timeless crafts tell stories of resilience, tradition and artistry.",
+    "accentColor": "#9E2A2B",
+    "chipsCount": 6,
+    "stickersCount": 6
+  },
+  {
+    "index": 8,
+    "slug": "maharashtra",
+    "name": "Maharashtra",
+    "tagLine": "Where tribal rice murals celebrate the harvest and gold tapestry weaves the peacock pallu.",
+    "accentColor": "#B45309",
+    "chipsCount": 2,
+    "stickersCount": 2
+  },
+  {
+    "index": 9,
+    "slug": "west-bengal",
+    "name": "West Bengal",
+    "tagLine": "Where culture, art and tradition flow through every handcrafted creation.",
+    "accentColor": "#1B365D",
+    "chipsCount": 6,
+    "stickersCount": 6
+  },
+  {
+    "index": 10,
+    "slug": "odisha",
+    "name": "Odisha",
+    "tagLine": "Where palm leaf etchings narrate temple epics and silver wire dances like spider silk.",
+    "accentColor": "#78350F",
+    "chipsCount": 2,
+    "stickersCount": 2
+  },
+  {
+    "index": 11,
+    "slug": "uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "tagLine": "Where Awadhi shadow needlework adorns muslin and Kadhwa gold brocades illuminate Banaras ghats.",
+    "accentColor": "#1E3A8A",
+    "chipsCount": 2,
+    "stickersCount": 2
+  },
+  {
+    "index": 12,
+    "slug": "assam",
+    "name": "Assam",
+    "tagLine": "Where verdant landscapes, rich traditions and skilled hands create timeless crafts.",
+    "accentColor": "#A6192E",
+    "chipsCount": 6,
+    "stickersCount": 6
+  },
+  {
+    "index": 13,
+    "slug": "bihar",
+    "name": "Bihar",
+    "tagLine": "Where mud courtyard walls celebrate nature and golden Sikki grass weaves the bride’s dowry.",
+    "accentColor": "#B91C1C",
+    "chipsCount": 2,
+    "stickersCount": 2
+  },
+  {
+    "index": 14,
+    "slug": "madhya-pradesh",
+    "name": "Madhya Pradesh",
+    "tagLine": "Where Gond tribal dots bring forest spirits alive and Chanderi looms weave tissue sheer silk.",
+    "accentColor": "#831843",
+    "chipsCount": 2,
+    "stickersCount": 2
+  },
+  {
+    "index": 15,
+    "slug": "punjab",
+    "name": "Punjab",
+    "tagLine": "Where mustard yellow silk blossoms across coarse khaddar and brass bells ring true.",
+    "accentColor": "#CA8A04",
+    "chipsCount": 2,
+    "stickersCount": 1
+  },
+  {
+    "index": 16,
+    "slug": "haryana",
+    "name": "Haryana",
+    "tagLine": "Where heavy pit looms weave durable Punja rugs and terracotta hearths shape clay pots.",
+    "accentColor": "#4D7C0F",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 17,
+    "slug": "himachal-pradesh",
+    "name": "Himachal Pradesh",
+    "tagLine": "Where Himalayan snow sheep yield fine wool and Chamba needles weave double-sided satin.",
+    "accentColor": "#1E40AF",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 18,
+    "slug": "uttarakhand",
+    "name": "Uttarakhand",
+    "tagLine": "Where sacred Aipan rice designs protect thresholds and Ringal bamboo bends with mountain grace.",
+    "accentColor": "#9F1239",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 19,
+    "slug": "kashmir",
+    "name": "Jammu & Kashmir",
+    "tagLine": "Where Chinar leaves turn to gold and Himalayan mountain wool spins into featherweight clouds.",
+    "accentColor": "#1E3A8A",
+    "chipsCount": 5,
+    "stickersCount": 5
+  },
+  {
+    "index": 20,
+    "slug": "chhattisgarh",
+    "name": "Chhattisgarh",
+    "tagLine": "Where tribal iron hammers strike by firelight and wild Kosa cocoons weave into forest silk.",
+    "accentColor": "#374151",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 21,
+    "slug": "jharkhand",
+    "name": "Jharkhand",
+    "tagLine": "Where Santhal mud walls tell winter harvest tales in black manganese and kaolin white.",
+    "accentColor": "#78350F",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 22,
+    "slug": "goa",
+    "name": "Goa",
+    "tagLine": "Where coastal coconut shells carve into filigree and Kunbi checks weave tribal dignity.",
+    "accentColor": "#BE185D",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 23,
+    "slug": "sikkim",
+    "name": "Sikkim",
+    "tagLine": "Where Kangchenjunga winds blow prayer flags and Thangka brushes grind lapis into deities.",
+    "accentColor": "#854D0E",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 24,
+    "slug": "arunachal-pradesh",
+    "name": "Arunachal Pradesh",
+    "tagLine": "Where sunrise first touches the snow peaks and Wancho chisels shape warrior timber.",
+    "accentColor": "#065F46",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 25,
+    "slug": "manipur",
+    "name": "Manipur",
+    "tagLine": "Where serpentite black stone polishes without a potter’s wheel and reed mats float on Loktak.",
+    "accentColor": "#18181B",
+    "chipsCount": 2,
+    "stickersCount": 1
+  },
+  {
+    "index": 26,
+    "slug": "meghalaya",
+    "name": "Meghalaya",
+    "tagLine": "Where living tree roots weave into bridges and organic peace silk never harms a cocoon.",
+    "accentColor": "#047857",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 27,
+    "slug": "mizoram",
+    "name": "Mizoram",
+    "tagLine": "Where mountain loin looms weave geometric Puan drapes and bamboo creates the dance of life.",
+    "accentColor": "#991B1B",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 28,
+    "slug": "nagaland",
+    "name": "Nagaland",
+    "tagLine": "Where tribal warrior shawls declare courage and carvers shape sacred mithun horns.",
+    "accentColor": "#B91C1C",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 29,
+    "slug": "tripura",
+    "name": "Tripura",
+    "tagLine": "Where split bamboo weaves into whisper-thin screens and royal Risa wraps sacred drapes.",
+    "accentColor": "#15803D",
+    "chipsCount": 1,
+    "stickersCount": 1
+  },
+  {
+    "index": 30,
+    "slug": "jammu-and-kashmir",
+    "name": "Jammu & Kashmir",
+    "tagLine": "Where mountain goat underfleece spins into whisper-soft shawls and walnut wood carves into royal chests.",
+    "accentColor": "#1E3A5F",
+    "chipsCount": 5,
+    "stickersCount": 5
+  }
+]

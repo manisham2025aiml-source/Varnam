@@ -1,0 +1,155 @@
+{
+  "count": 30,
+  "states": [
+    {
+      "index": 1,
+      "slug": "tamil-nadu",
+      "name": "Tamil Nadu"
+    },
+    {
+      "index": 2,
+      "slug": "kerala",
+      "name": "Kerala"
+    },
+    {
+      "index": 3,
+      "slug": "karnataka",
+      "name": "Karnataka"
+    },
+    {
+      "index": 4,
+      "slug": "andhra-pradesh",
+      "name": "Andhra Pradesh"
+    },
+    {
+      "index": 5,
+      "slug": "telangana",
+      "name": "Telangana"
+    },
+    {
+      "index": 6,
+      "slug": "rajasthan",
+      "name": "Rajasthan"
+    },
+    {
+      "index": 7,
+      "slug": "gujarat",
+      "name": "Gujarat"
+    },
+    {
+      "index": 8,
+      "slug": "maharashtra",
+      "name": "Maharashtra"
+    },
+    {
+      "index": 9,
+      "slug": "west-bengal",
+      "name": "West Bengal"
+    },
+    {
+      "index": 10,
+      "slug": "odisha",
+      "name": "Odisha"
+    },
+    {
+      "index": 11,
+      "slug": "uttar-pradesh",
+      "name": "Uttar Pradesh"
+    },
+    {
+      "index": 12,
+      "slug": "assam",
+      "name": "Assam"
+    },
+    {
+      "index": 13,
+      "slug": "bihar",
+      "name": "Bihar"
+    },
+    {
+      "index": 14,
+      "slug": "madhya-pradesh",
+      "name": "Madhya Pradesh"
+    },
+    {
+      "index": 15,
+      "slug": "punjab",
+      "name": "Punjab"
+    },
+    {
+      "index": 16,
+      "slug": "haryana",
+      "name": "Haryana"
+    },
+    {
+      "index": 17,
+      "slug": "himachal-pradesh",
+      "name": "Himachal Pradesh"
+    },
+    {
+      "index": 18,
+      "slug": "uttarakhand",
+      "name": "Uttarakhand"
+    },
+    {
+      "index": 19,
+      "slug": "kashmir",
+      "name": "Jammu & Kashmir"
+    },
+    {
+      "index": 20,
+      "slug": "chhattisgarh",
+      "name": "Chhattisgarh"
+    },
+    {
+      "index": 21,
+      "slug": "jharkhand",
+      "name": "Jharkhand"
+    },
+    {
+      "index": 22,
+      "slug": "goa",
+      "name": "Goa"
+    },
+    {
+      "index": 23,
+      "slug": "sikkim",
+      "name": "Sikkim"
+    },
+    {
+      "index": 24,
+      "slug": "arunachal-pradesh",
+      "name": "Arunachal Pradesh"
+    },
+    {
+      "index": 25,
+      "slug": "manipur",
+      "name": "Manipur"
+    },
+    {
+      "index": 26,
+      "slug": "meghalaya",
+      "name": "Meghalaya"
+    },
+    {
+      "index": 27,
+      "slug": "mizoram",
+      "name": "Mizoram"
+    },
+    {
+      "index": 28,
+      "slug": "nagaland",
+      "name": "Nagaland"
+    },
+    {
+      "index": 29,
+      "slug": "tripura",
+      "name": "Tripura"
+    },
+    {
+      "index": 30,
+      "slug": "jammu-and-kashmir",
+      "name": "Jammu & Kashmir"
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+import { Artisan } from '../types';
+
+export const ALL_ARTISANS: Artisan[] = [
+  {
+    id: 'rajendran-sthapathi',
+    name: 'S. Rajendran Sthapathi',
+    title: 'Master Shilpa Sthapathi & National Awardee',
+    craftSpecialty: 'Chola Lost-Wax Bronze Sculpture (Madhuchishtavidhana)',
+    stateId: 'IN-TN',
+    stateName: 'Tamil Nadu',
+    village: 'Swamimalai, Thanjavur District',
+    experienceYears: 42,
+    generation: '4th Generation Shilpa Sthapathi',
+    awards: ['National Award for Master Craftsmen (2004)', 'Tamil Nadu State Kalaimamani Award (2012)', 'UNESCO Seal of Excellence (2018)'],
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Born in Swamimalai on the banks of the Kaveri River, Rajendran learned lost-wax bronze casting by assisting his father in blending Kaveri silt and forest beeswax at age 10. He has personally cast monumental Nataraja icons for temples across India, Singapore, and the British Museum.',
+    quote: 'When molten bronze flows into the clay mould, it is not merely metal taking shape — it is prayer, geometry, and five generations of hands breathing life into bronze.',
+    journeyTimeline: [
+      {
+        year: 1982,
+        milestone: 'Apprenticeship under Grandfather',
+        description: 'Trained in Shilpa Shastras facial proportion rules (Talamana) and Agamic bronze metallurgy at the ancestral Swamimalai workshop.'
+      },
+      {
+        year: 1996,
+        milestone: 'First Independent Chola Nataraja Commission',
+        description: 'Completed a 7-foot Panchaloha Nataraja for the historic Big Temple restoration in Thanjavur.'
+      },
+      {
+        year: 2004,
+        milestone: 'National Master Craftsman Award',
+        description: 'Conferred the National Award by the President of India for reviving hollow-core Chola bronze casting.'
+      },
+      {
+        year: 2022,
+        milestone: 'Joined Varnam Digital Provenance Registry',
+        description: 'Pioneered cryptographic NFC chip embedment into the base pediments of all authentic Swamimalai icons.'
+      },
+      {
+        year: 'Present',
+        milestone: 'Swamimalai Apprenticeship Gurukulam',
+        description: 'Currently mentoring 16 young village apprentices to safeguard the authentic lost-wax lineage.'
+      }
+    ],
+    techniqueOverview: 'Cast in solid Panchaloha (copper, brass, zinc, silver, and gold traces) using Kaveri alluvial silt moulds bound with iron wire, fired in open ground pits.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['swamimalai-bronze-nataraja'],
+    phone: '+91 94432 XXXXX',
+    email: 'rajendran.sthapathi@varnam-heritage.in',
+    apprenticesCount: 16
+  },
+  {
+    id: 'meenakshi-ammal',
+    name: 'Meenakshi Ammal',
+    title: 'Senior Master Artist of Marabu Thanjavur Oviyam',
+    craftSpecialty: 'Traditional Tanjore Gold Foil & Gemstone Painting',
+    stateId: 'IN-TN',
+    stateName: 'Tamil Nadu',
+    village: 'Old Town Heritage Quarter, Thanjavur',
+    experienceYears: 36,
+    generation: '3rd Generation Traditional Painter',
+    awards: ['Tamil Nadu State Master Craftsman (2008)', 'All India Traditional Art Fellowship (2016)'],
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Meenakshi Ammal has spent over three decades perfecting the art of sukkan limestone gesso and 22-carat pure gold leaf gilding. Her devotional works adorn shrines worldwide and adhere strictly to 18th-century Maratha-era Tanjore aesthetic canons.',
+    quote: 'Real gold foil never loses its glow. A true Tanjore painting is created so that even in the soft light of a clay oil lamp, the eyes of the divine will look back at you with tenderness.',
+    journeyTimeline: [
+      {
+        year: 1988,
+        milestone: 'Learning the Gold Foil Burnish',
+        description: 'Initiated into grinding sukkan chalk and handling gossamer gold vark by her father in Thanjavur.'
+      },
+      {
+        year: 2008,
+        milestone: 'State Master Award',
+        description: 'Honored for preserving unadulterated mineral watercolors and genuine Burma teak bases.'
+      },
+      {
+        year: 2023,
+        milestone: 'Varnam Verified Guild Master',
+        description: 'Digitally authenticated 120+ masterworks with cryptographic origin certificates.'
+      }
+    ],
+    techniqueOverview: 'Seasoned teak wood canvas, natural limestone gesso relief, 22K gold foil burnished with semi-precious agate stones.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['tanjore-painting-krishna'],
+    apprenticesCount: 12
+  },
+  {
+    id: 'abdul-gafur-khatri',
+    name: 'Abdul Gafur Khatri',
+    title: 'Padma Shri & National Heritage Living Legend',
+    craftSpecialty: 'Nirona Roghan Art (Castor Oil Mid-Air Stylus Painting)',
+    stateId: 'IN-GJ',
+    stateName: 'Gujarat',
+    village: 'Nirona Village, Kutch District',
+    experienceYears: 48,
+    generation: '8th Generation Roghan Master',
+    awards: ['Padma Shri (2019)', 'National Award (1997)', 'State Award (1993)'],
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1609137144822-4a004eb7c9a4?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Abdul Gafur Khatri single-handedly resurrected the nearly extinct art of Roghan painting in Kutch. With his brothers and cousins in Nirona, he maintains the world’s sole surviving atelier for castor oil thread art. In 2014, his Tree of Life painting was presented by India to the White House.',
+    quote: 'In our village, we do not paint on the cloth. We spin the thread in the air, let gravity guide it, and when the fabric folds, the soul of Kutch appears in double perfection.',
+    journeyTimeline: [
+      {
+        year: 1976,
+        milestone: 'Preserving the Secret Family Castor Recipe',
+        description: 'Learned the grueling 48-hour castor oil boiling and mineral grinding process from his grandfather.'
+      },
+      {
+        year: 1997,
+        milestone: 'National Master Award',
+        description: 'Recognized for single-handedly preventing the extinction of Roghan art in Western India.'
+      },
+      {
+        year: 2014,
+        milestone: 'State Gift to President Barack Obama',
+        description: 'His "Tree of Life" Roghan painting presented to the US President by Prime Minister Narendra Modi.'
+      },
+      {
+        year: 2019,
+        milestone: 'Conferred Padma Shri',
+        description: 'Received India’s fourth-highest civilian honor from the President of India.'
+      }
+    ],
+    techniqueOverview: 'Boiled wild castor oil turned to viscous sap, worked in the palm, drawn into fine strands with a brass rod in mid-air, mirror-folded on silk.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['nirona-roghan-tree-of-life'],
+    apprenticesCount: 35
+  },
+  {
+    id: 'paresh-salvi',
+    name: 'Paresh Salvi',
+    title: 'Master Weaver of Patan Patola (Double Ikat)',
+    craftSpecialty: 'Heirloom Double-Ikat Silk Weaving on Slant Loom',
+    stateId: 'IN-GJ',
+    stateName: 'Gujarat',
+    village: 'Salvi Wada, Patan',
+    experienceYears: 34,
+    generation: '28th Generation Salvi Master Weaver',
+    awards: ['National Award (2001)', 'UNESCO Seal of Excellence (2012)'],
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Representing an unbroken 800-year-old family lineage traced to King Kumarapala’s court, Paresh Salvi weaves Patan Patola sarees where both sides look identical and natural dyes remain vibrant for over three centuries.',
+    quote: 'A machine can weave in an hour what takes us six months. But a machine weaves thread; we weave memory, mathematics, and botanical life that never perishes.',
+    journeyTimeline: [
+      {
+        year: 1990,
+        milestone: 'Mastering the Double-Tie Calculus',
+        description: 'Mastered the complex geometric tie-and-dye formulas passed down in Gujarati verse.'
+      },
+      {
+        year: 2001,
+        milestone: 'National Award for Master Weavers',
+        description: 'Honored for creating the 100-year commemorative Navratna double-ikat saree.'
+      },
+      {
+        year: 2014,
+        milestone: 'Patan Patola Heritage Museum Founding',
+        description: 'Co-established the world’s foremost living museum of double ikat weaving in Patan.'
+      }
+    ],
+    techniqueOverview: 'Pure 8-ply mulberry silk, natural madder and marigold tie-dye in both warp and weft, hand-aligned on a rosewood slant loom with curved needles.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['patan-patola-double-ikat'],
+    apprenticesCount: 8
+  },
+  {
+    id: 'kripal-kumbhakar',
+    name: 'Kripal Kumbhakar',
+    title: 'Jaipur Blue Pottery Master Ceramicist',
+    craftSpecialty: 'Non-Clay Quartz & Cobalt Glazed Blue Pottery',
+    stateId: 'IN-RJ',
+    stateName: 'Rajasthan',
+    village: 'Kot Jewar, Jaipur',
+    experienceYears: 28,
+    generation: '3rd Generation Master Potter',
+    awards: ['State Award Rajasthan (2010)', 'Crafts Council of India Seal (2017)'],
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Trained under the legendary Kripal Singh Shekhawat, Kripal Kumbhakar has modernized classic Jaipur Blue Pottery shapes while adhering strictly to natural quartz dough, copper oxide turquoise, and wood kiln firings.',
+    quote: 'Clay returns to dust quickly, but quartz stone and glass powder endure for generations. Our blue pottery is born from the desert sands and fired with the breath of the sun.',
+    journeyTimeline: [
+      {
+        year: 1996,
+        milestone: 'Mastering Quartz Formulation',
+        description: 'Perfected the non-clay dough blending ground quartz, glass cullet, and Multani mitti.'
+      },
+      {
+        year: 2010,
+        milestone: 'Rajasthan State Master Award',
+        description: 'Recognized for eliminating lead glazes in favor of borax and plant gum glazes.'
+      }
+    ],
+    techniqueOverview: 'Non-clay Egyptian quartz paste, hand-moulded with wood ash, freehand mineral cobalt and copper painting, single-baked in low heat kilns.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['jaipur-blue-pottery-vase'],
+    apprenticesCount: 14
+  },
+  {
+    id: 'ghulam-nabi-kani',
+    name: 'Ustad Ghulam Nabi Dar',
+    title: 'Master Kani Pashmina Weaver & Shilp Guru Nominee',
+    craftSpecialty: 'Kashmiri Kani Wooden-Spool Pashmina Weaving',
+    stateId: 'IN-JK',
+    stateName: 'Jammu & Kashmir',
+    village: 'Kanihama Craft Cluster, Kashmir',
+    experienceYears: 44,
+    generation: '5th Generation Kani Ustad',
+    awards: ['National Award (1998)', 'Jammu & Kashmir State Award (2007)'],
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Ustad Ghulam Nabi has spent over four decades operating wooden-needle handlooms in Kanihama, deciphering and weaving complex floral Talim cryptographic codes that produce shawls so light they pass through a ring.',
+    quote: 'The Talim is the music of our loom. When the Ustad chants the verse, our fingers do not search for the color — they know the song by heart.',
+    journeyTimeline: [
+      {
+        year: 1980,
+        milestone: 'Initiation into Talim Reading',
+        description: 'Trained to read the cursive coded Talim scrolls under his father Ustad Ghulam Hassan.'
+      },
+      {
+        year: 1998,
+        milestone: 'National Master Award',
+        description: 'Conferred the National Award for a masterpiece 8-month floral Jamawar Kani shawl.'
+      }
+    ],
+    techniqueOverview: 'Pure 12-14 micron Changthangi cashmere fleece, woven row by row with small wooden Tujis guided by recited Talim verse codes.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['kashmir-kani-pashmina-shawl'],
+    apprenticesCount: 18
+  },
+  {
+    id: 'akshaya-chitrakar',
+    name: 'Akshaya Kumar Chitrakar',
+    title: 'Heritage Master of Raghurajpur Talapatra Pattachitra',
+    craftSpecialty: 'Incised Palm Leaf Etching & Natural Conch Shell Painting',
+    stateId: 'IN-OR',
+    stateName: 'Odisha',
+    village: 'Raghurajpur Heritage Crafts Village, Puri',
+    experienceYears: 32,
+    generation: '6th Generation Chitrakar',
+    awards: ['National Award (2011)', 'Odisha Lalit Kala Akademi Award (2018)'],
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Akshaya lives in Raghurajpur, where every house has an open studio facing the village temple. He carves micro-incisions into cured palm leaves using iron styluses and grinds white pigment from river conch shells.',
+    quote: 'The palm leaf is fragile until it is cured with turmeric and love. When the iron stylus cuts into the leaf, it makes a sound like monsoon rain. That is when Lord Jagannath enters the painting.',
+    journeyTimeline: [
+      {
+        year: 1992,
+        milestone: 'Palm Leaf Preparation Mastery',
+        description: 'Learned the 6-month curing of palmyra leaves in turmeric water and stone pressing.'
+      },
+      {
+        year: 2011,
+        milestone: 'National Award for Gitagovinda Scroll',
+        description: 'Awarded for an intricate 24-leaf foldable manuscript depicting the 24 avatars of Vishnu.'
+      }
+    ],
+    techniqueOverview: 'Seasoned dried palm leaves stitched with thread, etched freehand with iron styluses, rubbed with soot ink and vegetable washes.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['raghurajpur-pattachitra-scroll'],
+    apprenticesCount: 20
+  },
+  {
+    id: 'haji-munna-ansari',
+    name: 'Haji Munna Ansari',
+    title: 'Master Weaver of Varanasi Kadhwa Brocade',
+    craftSpecialty: 'Pure Gold Zari Kadhwa Pit Loom Weaving',
+    stateId: 'IN-UP',
+    stateName: 'Uttar Pradesh',
+    village: 'Madanpura, Varanasi',
+    experienceYears: 46,
+    generation: '5th Generation Banarasi Master Weaver',
+    awards: ['National Award (2006)', 'Sant Kabir Award Nominee (2019)'],
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Haji Munna has spent nearly half a century on the pit looms of Madanpura in Varanasi. He specializes in the laborious Kadhwa technique, where every flower and bird is hand-locked with pure silver-gold zari without leaving loose threads on the back.',
+    quote: 'Any machine can print zari. But on our pit loom, each gold flower is sewn by hand into the heart of the silk. You can wear a real Kadhwa inside out, and no one could tell which side is the front.',
+    journeyTimeline: [
+      {
+        year: 1978,
+        milestone: 'First Pit Loom Master Weave',
+        description: 'Wove his first complete Shikargah bridal saree under the guidance of his master uncle.'
+      },
+      {
+        year: 2006,
+        milestone: 'National Award for Master Craftsmen',
+        description: 'Honored for preserving hand-punched Naksha cards and zero-float Kadhwa brocading.'
+      }
+    ],
+    techniqueOverview: 'Katan pure silk warp and weft, pure silver zari flash-gilded with 24K gold, individually hand-locked motifs using miniature bamboo spools.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['banarasi-kadhwa-gold-zari-saree'],
+    apprenticesCount: 22
+  },
+  {
+    id: 'parameswaran-aranmula',
+    name: 'A. Parameswaran Achary',
+    title: 'Master Metallurgist of Aranmula Sacred Metal Mirrors',
+    craftSpecialty: 'Front-Surface Front-Reflecting Copper-Tin Metallurgy',
+    stateId: 'IN-KL',
+    stateName: 'Kerala',
+    village: 'Aranmula, Pathanamthitta District',
+    experienceYears: 40,
+    generation: '7th Generation Vishwakarma Guild Master',
+    awards: ['Kerala State Master Craftsman Award (2005)', 'National Award (2015)'],
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Keeper of one of the world’s most closely guarded metallurgic secrets, Parameswaran casts non-glass mirrors from an ancient copper-tin alloy that reflects light with zero distortion. Only five master families in Aranmula hold this sacred knowledge.',
+    quote: 'A glass mirror lies to you — it reflects through glass and bends the light twice. An Aranmula mirror does not lie; you look directly upon the face of truth as the ancients did.',
+    journeyTimeline: [
+      {
+        year: 1984,
+        milestone: 'Consecration of the Sacred Crucible',
+        description: 'Passed the secret copper-tin alloy formula test before the temple elders in Aranmula.'
+      },
+      {
+        year: 2015,
+        milestone: 'National Master Craftsman Award',
+        description: 'Awarded by the Government of India for maintaining flawless front-surface mirror casting.'
+      }
+    ],
+    techniqueOverview: 'Secret copper-tin crucible melt, double-clay blank casting, 16 days of progressive velvet and burnt clay powder buffing.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['aranmula-kannadi-vaalkannadi'],
+    apprenticesCount: 9
+  },
+  {
+    id: 'vadivelu-weaver',
+    name: 'K. Vadivelu Mudaliar',
+    title: 'Master Korvai Silk Weaver & President Awardee',
+    craftSpecialty: 'Kanchipuram Three-Shuttle Interlocking Korvai Weave',
+    stateId: 'IN-TN',
+    stateName: 'Tamil Nadu',
+    village: 'Pillaiyarpalayam, Kanchipuram',
+    experienceYears: 48,
+    generation: '5th Generation Royal Weaver',
+    awards: ['National Handloom Award (2002)', 'Sant Kabir Award for Handloom Excellence (2014)'],
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Presiding over four subterranean pit looms in Pillaiyarpalayam, Vadivelu works in synchronized breathing with his weaver partner to produce interlocking contrast temple borders in pure mulberry silk and silver-gilt zari.',
+    quote: 'A Korvai loom is like a prayer: neither hand can move faster than the other. If one pulls too hard, the silk weeps.',
+    journeyTimeline: [
+      { year: 1976, milestone: 'First Pit Loom Apprenticeship', description: 'Assisted father on double-pedal throw-shuttle Korvai pit looms.' },
+      { year: 1994, milestone: 'Revival of 1000-Butta Sari', description: 'Reconstructed antique Chola temple motifs from Brihadeeswara stone carvings.' },
+      { year: 2014, milestone: 'Sant Kabir Award', description: 'Conferred India’s highest textile honor by the Ministry of Textiles.' }
+    ],
+    techniqueOverview: 'Three-shuttle interlocking technique where body and border are woven simultaneously and joined loop-by-loop.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['kanchipuram-silk-sari'],
+    apprenticesCount: 22
+  },
+  {
+    id: 'ramesh-chhipa',
+    name: 'Rameshwar Lal Chhipa',
+    title: 'Master Block Printer & Natural Colorist',
+    craftSpecialty: 'Bagru Mud-Resist (Dabu) Indigo & Harda Block Printing',
+    stateId: 'IN-RJ',
+    stateName: 'Rajasthan',
+    village: 'Chhipa Mohalla, Bagru',
+    experienceYears: 36,
+    generation: '4th Generation Chhipa Artisan',
+    awards: ['State Master Craftsman Award (2009)', 'UNESCO Craft Seal (2017)'],
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Custodian of Bagru’s ancient mud-resist technique, Rameshwar prepares Dabu paste from black riverbed clay, lime, and gum, hand-carving teakwood blocks to stamp intricate flora before plunging the cloth into 12-foot subterranean indigo vats.',
+    quote: 'Our colors do not come from a factory bottle. They come from the riverbed clay, the pomegranate rind, and the sun of Rajasthan.',
+    journeyTimeline: [
+      { year: 1988, milestone: 'Inherited Ancestral Dye Vats', description: 'Began maintaining 150-year-old live indigo fermentation pits in Bagru.' },
+      { year: 2009, milestone: 'State Award for Mud-Resist', description: 'Honored for zero-chemical ecological dyeing and block design preservation.' }
+    ],
+    techniqueOverview: 'Hand block-printing with mud resist (Dabu), dyed in natural indigo, harda, and alizarin madder.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['bagru-dabu-block-textile'],
+    apprenticesCount: 14
+  },
+  {
+    id: 'giriraj-soni',
+    name: 'Giriraj Prasad Soni',
+    title: 'Master Goldsmith of 23K Gold Thewa Glass Art',
+    craftSpecialty: 'Pure 23K Gold Foil Fusion on Colored Belgian Glass',
+    stateId: 'IN-RJ',
+    stateName: 'Rajasthan',
+    village: 'Soni Gali, Pratapgarh',
+    experienceYears: 39,
+    generation: '6th Generation Rajsoni Lineage',
+    awards: ['National Award for Master Craftsmen (2001)', 'Shilp Guru Award (2018)'],
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1535295972055-1c762f4483e5?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Keeper of the 250-year-old secret Thewa technique, Giriraj etches delicate hunting and mythical scenes on pure gold foil thinner than paper, fusing it through controlled heat onto terracotta-backed colored glass.',
+    quote: 'Thewa is not surface embossing — the gold becomes one with the molten soul of the glass.',
+    journeyTimeline: [
+      { year: 1985, milestone: 'Initiation into Rajsoni Secrets', description: 'Initiated into the closely guarded secret family gold-foil fusion formula.' },
+      { year: 2001, milestone: 'Presidential National Award', description: 'Conferred National Master Craftsman Award for historical Thewa medallions.' },
+      { year: 2018, milestone: 'Shilp Guru Title', description: 'Awarded India’s ultimate handicraft honor as a living cultural treasure.' }
+    ],
+    techniqueOverview: 'Hand-chiseling micro-thin 23K gold leaf with iron needles, followed by thermal bonding onto annealed molten glass.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['thewa-gold-pendant'],
+    apprenticesCount: 8
+  },
+  {
+    id: 'biren-kumbhakar',
+    name: 'Biren Kumbhakar',
+    title: 'Master Potter of Panchmura Sacred Terracotta',
+    craftSpecialty: 'Bankura Long-Eared Sacred Terracotta Sculptures',
+    stateId: 'IN-WB',
+    stateName: 'West Bengal',
+    village: 'Panchmura, Bankura District',
+    experienceYears: 44,
+    generation: '5th Generation Kumbhakar Potter',
+    awards: ['President’s National Award (2007)', 'Bengal Shilpa Samman (2015)'],
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Famous worldwide for the towering Bankura Horse with its distinctive hollow cylindrical neck and erect ears, Biren sculpts entirely on the potter’s wheel before assembling limbs and carving motifs with bamboo knives.',
+    quote: 'The red earth of Bankura remembers every king and every drought. When fired with paddy husk, it speaks our village’s prayer.',
+    journeyTimeline: [
+      { year: 1980, milestone: 'Wheel Turning Mastery', description: 'Mastered hollow multi-part cylindrical throwing of 5-foot terracotta horses.' },
+      { year: 2007, milestone: 'National Crafts Award', description: 'Honored by President of India for architectural terracotta restoration in Bishnupur.' }
+    ],
+    techniqueOverview: 'Wheel-thrown hollow cylindrical body segments assembled with red laterite clay slip and slow-fired in sealed pit kilns.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['bankura-terracotta-horse'],
+    apprenticesCount: 18
+  },
+  {
+    id: 'ananya-karmakar',
+    name: 'Ananya Karmakar',
+    title: 'Master Metallurgist of Lost-Wax Dokra',
+    craftSpecialty: 'Non-Ferrous Tribal Lost-Wax Metallurgy (Bikna Guild)',
+    stateId: 'IN-WB',
+    stateName: 'West Bengal',
+    village: 'Bikna Dokra Village, Bankura',
+    experienceYears: 28,
+    generation: '4th Generation Dokra Karmakar',
+    awards: ['State Handicrafts Award (2016)', 'World Crafts Council Recognition (2021)'],
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1400&q=80',
+    bio: 'One of the rare women master sculptors leading a Dokra collective, Ananya winds beeswax threads over clay cores to craft rustic lamps, tribal dancers, and folk deities preserving a 4,000-year-old metallurgy technique.',
+    quote: 'Our sculptures are never perfectly smooth, because human fingers made them. Every ridge is where my hands touched the wax.',
+    journeyTimeline: [
+      { year: 1996, milestone: 'Guild Leadership', description: 'Organized the Bikna Women’s Dokra Guild to eliminate middleman exploitation.' },
+      { year: 2016, milestone: 'State Handicrafts Award', description: 'Recognized for monumental tribal brass lamp designs with integrated lost-wax mesh.' }
+    ],
+    techniqueOverview: 'Clay core wrapped with beeswax coils, encased in termite mound clay moulds, fired in wood and cow dung trenches.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['bikna-dokra-tribal-lamp'],
+    apprenticesCount: 26
+  },
+  {
+    id: 'farooq-papier-mache',
+    name: 'Farooq Ahmad Mir',
+    title: 'Ustad of Sakhtsazi & Naqqashi Papier-Mâché',
+    craftSpecialty: 'Kashmir Imperial Papier-Mâché & 24K Gold Naqqashi',
+    stateId: 'IN-JK',
+    stateName: 'Jammu & Kashmir',
+    village: 'Zadibal, Srinagar Old City',
+    experienceYears: 37,
+    generation: '4th Generation Naqqash',
+    awards: ['National Award (2010)', 'Jammu & Kashmir Master Artisan Medal (2019)'],
+    avatar: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Pounding waste paper and rice starch into pulp (Sakhtsazi), Farooq molds imperial boxes and samovars, then uses single-hair cat-whisker brushes to paint Hazara flora and 24K gold illumination (Naqqashi).',
+    quote: 'Papier-mâché in Kashmir is the child of poetry. You cannot paint it in haste; your pulse must match the river Jhelum.',
+    journeyTimeline: [
+      { year: 1987, milestone: 'Apprenticeship in Zadibal', description: 'Trained under Ustad Ghulam Mohammad in Mughal miniature border illumination.' },
+      { year: 2010, milestone: 'National Award for Master Craftsmen', description: 'Awarded for an imperial 36-inch Samovar decorated with 1,000 miniature Chinar leaves.' }
+    ],
+    techniqueOverview: 'Layered paper pulp molding, dried in shade, burnished with agate stone, painted with natural gouache and pure gold leaf.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['kashmir-papier-mache-globe'],
+    apprenticesCount: 11
+  },
+  {
+    id: 'pramod-maharana',
+    name: 'Pramod Maharana',
+    title: 'Master Silversmith of Cuttack Tarakasi Filigree',
+    craftSpecialty: 'Pure 99% Fine Silver Filigree Wire Architecture',
+    stateId: 'IN-OR',
+    stateName: 'Odisha',
+    village: 'Alisha Bazar, Cuttack',
+    experienceYears: 41,
+    generation: '5th Generation Tarakasi Silversmith',
+    awards: ['National Award (2008)', 'Odisha Living Treasure Recognition (2020)'],
+    avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Drawing pure 99% silver ingots through diamond dies into wires thinner than human hair, Pramod solders intricate jaali filigree peacocks and Konark wheel medallions using a handheld mouth-blowpipe torch.',
+    quote: 'Silver is cold metal, but when spun into filigree, it breathes like lace in a temple breeze.',
+    journeyTimeline: [
+      { year: 1983, milestone: 'First Silver Filigree Crown', description: 'Crafted the silver crown for the grand Durga idol in Cuttack Alisha Bazar.' },
+      { year: 2008, milestone: 'National Crafts Award', description: 'Honored by Government of India for the finest 0.1mm silver filigree peacock boat.' }
+    ],
+    techniqueOverview: 'Silver drawn through wire gauges, twisted into zigzag rippled threads (Tarakasi), soldered over open charcoal embers.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['cuttack-tarakasi-silver-peacock'],
+    apprenticesCount: 15
+  },
+  {
+    id: 'syed-channapatna',
+    name: 'Syed Noorullah Basha',
+    title: 'Master Turner of Channapatna Lacquerware',
+    craftSpecialty: 'Safe Organic Baby Toys & Turnery in Wrightia Wood',
+    stateId: 'IN-KA',
+    stateName: 'Karnataka',
+    village: 'Makkan Street, Channapatna',
+    experienceYears: 33,
+    generation: '3rd Generation Toy Turner',
+    awards: ['Karnataka State Craft Award (2011)', 'Good Design India Seal (2019)'],
+    avatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1600100397608-f010e42f9b1c?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Continuing the Persian-Mysore guild tradition patronized by Tipu Sultan, Syed turns lightweight Wrightia tinctoria wood on rapid wood lathes, polishing with screw pine leaves and coating with organic turmeric and indigo resin.',
+    quote: 'When a mother hands our wooden rattle to her newborn, she knows there is no plastic, no lead, only pure wood and forest lacquer.',
+    journeyTimeline: [
+      { year: 1991, milestone: 'Lathe Turning Apprenticeship', description: 'Learned freehand chisel lathe shaping from his grandfather in Channapatna.' },
+      { year: 2011, milestone: 'State Craft Award', description: 'Awarded for developing natural non-toxic vegetable dyes for international eco-toy standards.' }
+    ],
+    techniqueOverview: 'Wood lathe shaping of Aale Mara timber, friction-applied natural shellac colored with plant extracts, polished with dry screw pine leaves.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['channapatna-lacquer-rocking-horse'],
+    apprenticesCount: 19
+  },
+  {
+    id: 'narasimha-bidri',
+    name: 'K. Narasimha Rao',
+    title: 'Master Artisan of Bidar Bidriware Silver Inlay',
+    craftSpecialty: 'Zinc-Copper Alloy Damascening with Pure Silver Wire',
+    stateId: 'IN-KA',
+    stateName: 'Karnataka',
+    village: 'Old Fort Ward, Bidar',
+    experienceYears: 37,
+    generation: '4th Generation Bidri Guild',
+    awards: ['National Master Craftsman Award (2006)', 'UNESCO Seal of Excellence (2015)'],
+    avatar: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1600100397608-f010e42f9b1c?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Mastering the dramatic blackening oxidation using ancient soil from the Bidar Fort grounds, Narasimha engraves fine grooves into zinc casting and hammers pure silver wires flush with the metal surface.',
+    quote: 'Only soil that has aged in darkness beneath the 15th-century Bidar Fort has the mineral spirit to turn our alloy pitch black.',
+    journeyTimeline: [
+      { year: 1987, milestone: 'Master Inlay Certification', description: 'Perfected the Tarkashi and Taihnishan silver sheet hammering methods.' },
+      { year: 2006, milestone: 'National Crafts Award', description: 'Conferred National Award by the President of India for heritage Bidri vases.' }
+    ],
+    techniqueOverview: 'Zinc-copper sand casting, hand chisel engraving, pure silver wire hammering, boiled in fort-soil nitrate paste for velvet black patina.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['bidriware-silver-vase'],
+    apprenticesCount: 13
+  },
+  {
+    id: 'lakshmaiah-kalamkari',
+    name: 'J. Lakshmaiah Sthapathi',
+    title: 'National Master Artist of Srikalahasti Kalamkari',
+    craftSpecialty: 'Freehand Sacred Temple Hangings using Bamboo Stylus',
+    stateId: 'IN-AP',
+    stateName: 'Andhra Pradesh & Telangana',
+    village: 'Bahadurpeta, Srikalahasti',
+    experienceYears: 46,
+    generation: '5th Generation Temple Artist',
+    awards: ['National Award for Master Craftsmen (1998)', 'Shilp Guru Award (2016)'],
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Drawing epics directly on milk-treated unbleached cotton with hand-sharpened bamboo pens (kalams) and fermented iron rust ink, Lakshmaiah is one of the revered living masters of temple storytelling scrolls.',
+    quote: 'Our pen does not use synthetic ink. It drinks jaggery and iron rust, and it sings the verses of the Ramayana onto cotton.',
+    journeyTimeline: [
+      { year: 1978, milestone: 'Temple Scroll Initiation', description: 'Trained under senior temple painters in Srikalahasti in Agamic iconometry.' },
+      { year: 1998, milestone: 'National Award for Master Craftsmen', description: 'Awarded for an epic 24-foot hand-drawn Ramayana scroll on handloom cotton.' },
+      { year: 2016, milestone: 'Shilp Guru Award', description: 'Honored as Master Guru of Indian Sacred Textile Arts by President of India.' }
+    ],
+    techniqueOverview: 'Buffalo-milk treated cotton, outlines drawn with bamboo kalam and iron jaggery ink, painted with natural madder and indigo.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['srikalahasti-kalamkari-ramayana'],
+    apprenticesCount: 20
+  },
+  {
+    id: 'hemchandra-goswami',
+    name: 'Sangeet Natak Akademi Awardee Hemchandra Goswami',
+    title: 'Sattriya Master Mask Maker of Majuli Island',
+    craftSpecialty: 'Majuli Island Sacred Bamboo, Cow Dung & Clay Masks (Mukha)',
+    stateId: 'IN-AS',
+    stateName: 'Assam',
+    village: 'Samaguri Sattra, Majuli Island',
+    experienceYears: 45,
+    generation: '4th Generation Sattriya Mukha Artist',
+    awards: ['Sangeet Natak Akademi Award (2014)', 'Padma Shri (2023)'],
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Preserving the 500-year-old theatrical heritage founded by Srimanta Sankardev, Hemchandra crafts expressive, lightweight bamboo masks for Bhaona folk theater in the monastery island of Majuli.',
+    quote: 'When an actor wears our mask, his human ego vanishes. He becomes Ravana, Garuda, or Narasimha, moving strictly by the spiritual pulse of the drum.',
+    journeyTimeline: [
+      { year: 1978, milestone: 'Sattra Apprenticeship', description: 'Began carving bamboo splints under grandfather in Samaguri Sattra.' },
+      { year: 2014, milestone: 'Sangeet Natak Akademi Award', description: 'Recognized for pioneering moving-jaw bamboo mask articulation.' },
+      { year: 2023, milestone: 'Padma Shri', description: 'Awarded India’s fourth-highest civilian award for safeguarding Majuli folk arts.' }
+    ],
+    techniqueOverview: 'Split bamboo armature bound with cane, wrapped in cotton cloth dipped in Brahmaputra silt clay and cow dung, painted with natural earth pigments (Hengul & Haital).',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['majuli-bamboo-sattriya-mask'],
+    apprenticesCount: 25
+  },
+  {
+    id: 'uttam-bhosale',
+    name: 'Uttam Rao Bhosale',
+    title: 'Master Weaver of Royal Paithani Brocade',
+    craftSpecialty: 'Pure Silk Tapestry Weaving with Solid Gold Peacock Pallu',
+    stateId: 'IN-MH',
+    stateName: 'Maharashtra',
+    village: 'Yeola Handloom Cluster, Nashik',
+    experienceYears: 38,
+    generation: '4th Generation Peshwa Guild Weaver',
+    awards: ['Maharashtra State Master Weaver Award (2010)', 'National Handloom Award (2018)'],
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Renowned for hand-shuttling solid gold zari into radiant peacock (Mor) and parrot (Tota-Maina) motifs, Uttam practices oblique interlocking tapestry without reverse-side thread floats.',
+    quote: 'An authentic Paithani looks equally flawless from the back as it does from the front — there is not a single loose thread.',
+    journeyTimeline: [
+      { year: 1986, milestone: 'First Gold Pallu Commission', description: 'Wove an ancestral Asavali flowering vine motif on Yeola pit looms.' },
+      { year: 2018, milestone: 'National Handloom Award', description: 'Awarded for weaving a 28-color Bangadi Mor (peacock in bangle) royal sari.' }
+    ],
+    techniqueOverview: 'Interlocking warp and weft tapestry weave using pure Bangalore filature silk and 24K electroplated silver-gilt zari.',
+    verifiedStatus: 'Verified Master',
+    craftIds: ['paithani-peacock-pallu-saree'],
+    apprenticesCount: 17
+  },
+  {
+    id: 'bashir-ahmed-kani',
+    name: 'Bashir Ahmed Mir',
+    title: 'National Awardee Master Weaver of Kani Pashmina',
+    craftSpecialty: 'Discontinuous Weft Twill Tapestry & Talim Chanting',
+    stateId: 'IN-JK',
+    stateName: 'Jammu & Kashmir',
+    village: 'Kanihama, Budgam District, Kashmir',
+    experienceYears: 44,
+    generation: '7th Generation Kani Master',
+    awards: ['National Award for Master Craftsmen (2009)', 'Sant Kabir Award (2017)', 'UNESCO Seal of Excellence (2020)'],
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Born in Kanihama, the historic cradle of Kashmiri shawl making, Bashir Ahmed began training on his father’s pit loom at age 11. He holds the rare distinction of transcribing original Persian Talim codes into visual floral weaves containing up to 1,500 wooden spools.',
+    quote: 'When we weave Kani, we do not simply pass threads — we recite poetry through spools. Every knot is a syllable composed centuries ago.',
+    journeyTimeline: [
+      { year: 1980, milestone: 'Apprenticeship under Grandfather', description: 'Learned the phonetic rhythm of coded Talim chanting and high-altitude Changthangi fleece sorting.' },
+      { year: 1998, milestone: 'Mughal Jamawar Revival Project', description: 'Recreated a 200-year-old imperial Shikargah Kani shawl exhibited at the Victoria & Albert Museum.' },
+      { year: 2009, milestone: 'National Award for Master Craftsmen', description: 'Awarded by the President of India for preserving authentic wooden-spool Kani weaving.' },
+      { year: 2023, milestone: 'Varnam Living Guild Authentication', description: 'Registered all family looms under cryptographic NFC geographical provenance tagging.' }
+    ],
+    techniqueOverview: 'Hand-knotted and interlaced using pointed wooden Tujis over Changthangi pashmina warp, completely free of motorized machinery.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['kani-pashmina-shawl', 'sozni-embroidery-stole', 'kashmiri-silk-carpet'],
+    apprenticesCount: 22
+  },
+  {
+    id: 'ghulam-nabi-wood',
+    name: 'Ghulam Nabi Dar',
+    title: 'Padma Shri & Shilp Guru Master Woodcarver',
+    craftSpecialty: 'Deep Undercut Kashmiri Walnut Wood Sculpting',
+    stateId: 'IN-JK',
+    stateName: 'Jammu & Kashmir',
+    village: 'Fateh Kadal, Downtown Srinagar, Kashmir',
+    experienceYears: 52,
+    generation: '5th Generation Royal Woodcarver',
+    awards: ['Padma Shri (2024)', 'Shilp Guru Award (2014)', 'National Master Craftsman Award (1984)'],
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1400&q=80',
+    bio: 'Renowned as the master of five-layer undercut (Sunbhi) carving, Ghulam Nabi sculpts living trees from seasoned walnut roots, creating delicate birds with flexible feathers carved from a single piece of wood.',
+    quote: 'Walnut root wood has its own soul and scent. You do not impose your will on the wood; you listen to the grain until the Chinar leaves emerge.',
+    journeyTimeline: [
+      { year: 1972, milestone: 'First Undercut Dragon Screen', description: 'Mastered 3D undercut carving where chisels work beneath overlapping flower petals.' },
+      { year: 1984, milestone: 'National Award for Master Craftsmen', description: 'Recognized for reviving the complex openwork Jali screens of medieval Kashmir.' },
+      { year: 2024, milestone: 'Padma Shri Honor', description: 'Awarded India’s fourth-highest civilian award for lifetime dedication to Kashmiri handicrafts.' }
+    ],
+    techniqueOverview: 'Chiseled entirely by hand from solid seasoned Kashmir walnut roots using 40 custom steel gouges, burnished with natural agate stones.',
+    verifiedStatus: 'Living Legend',
+    craftIds: ['carved-walnut-wood-box', 'kashmiri-papier-mache-box'],
+    apprenticesCount: 30
+  }
+];
+
+

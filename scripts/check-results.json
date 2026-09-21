@@ -1,0 +1,14 @@
+{
+  "tsconfig.app.json": {
+    "errorsCount": 0,
+    "errors": []
+  },
+  "tsconfig.node.json": {
+    "errorsCount": 0,
+    "errors": []
+  },
+  "tsconfig.server.json": {
+    "errorsCount": 0,
+    "errors": []
+  }
+}
