@@ -1555,7 +1555,7 @@
       "name": "Manisha M",
       "role": "customer",
       "email_verified": true,
-      "email_verification_time": 1789928436112,
+      "email_verification_time": 1790071973580,
       "created_at": 1789925225118
     },
     {
@@ -1598,6 +1598,12 @@
       "user_id": "jx7fm8b9mfcsn7hzc24yzq0w8s8esbg0",
       "expiration_time": 1792520436112,
       "created_at": 1789928436112
+    },
+    {
+      "id": "sess-1790071973580-ssu58y",
+      "user_id": "jx7fm8b9mfcsn7hzc24yzq0w8s8esbg0",
+      "expiration_time": 1792663973580,
+      "created_at": 1790071973580
     }
   ],
   "authVerificationCodes": [],

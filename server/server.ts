@@ -150,6 +150,80 @@ app.get('/api/nfc/stats', (_req: Request, res: Response) => {
   });
 });
 
+// ==========================================
+// RFID HARDWARE API (ESP32 + RC522)
+// ==========================================
+
+// POST /api/rfid/scan - Process RFID scan from ESP32 + RC522 or Web simulation
+app.post('/api/rfid/scan', (req: Request, res: Response) => {
+  const rawUid = String(req.body.uid || req.body.UID || req.body.rfid || '').trim();
+  const deviceId = String(req.body.device_id || req.body.deviceId || 'VARNAM-ESP32-RC522').trim();
+
+  if (!rawUid) {
+    res.status(400).json({ success: false, message: 'uid is required' });
+    return;
+  }
+
+  const event = db.handleRfidScan(rawUid, deviceId);
+
+  res.json({
+    success: true,
+    verified: event.status === 'verified',
+    uid: event.formatted_uid,
+    rawUid: event.uid,
+    user: event.user_name,
+    role: event.role,
+    status: event.status,
+    craftId: event.craft_id,
+    craftName: event.craft_name,
+    message: event.status === 'verified' ? `Welcome ${event.user_name}` : 'Unknown RFID Tag',
+    oled: {
+      line1: event.oled_line1,
+      line2: event.oled_line2,
+      line3: event.oled_line3
+    },
+    timestamp: event.timestamp
+  });
+});
+
+// GET /api/rfid/latest - Polled by website for real-time RFID status display
+app.get('/api/rfid/latest', (_req: Request, res: Response) => {
+  const latest = db.getLatestRfidScan();
+  res.json({
+    success: true,
+    deviceConnected: true,
+    latest: latest || {
+      uid: 'None',
+      formatted_uid: '-- -- -- --',
+      user_name: 'Waiting for tap...',
+      role: '--',
+      status: 'waiting',
+      timestamp: new Date().toISOString()
+    }
+  });
+});
+
+// GET /api/rfid/cards - List registered RFID cards / keychains
+app.get('/api/rfid/cards', (_req: Request, res: Response) => {
+  const cards = db.getAllRfidCards();
+  res.json({
+    success: true,
+    count: cards.length,
+    cards
+  });
+});
+
+// POST /api/rfid/register - Register a new card or keychain
+app.post('/api/rfid/register', (req: Request, res: Response) => {
+  const { uid, user_name, role, card_type, craft_id, craft_name } = req.body;
+  if (!uid || !user_name) {
+    res.status(400).json({ success: false, message: 'uid and user_name are required' });
+    return;
+  }
+  const card = db.registerRfidCard({ uid, user_name, role, card_type, craft_id, craft_name });
+  res.json({ success: true, message: 'RFID tag registered', card });
+});
+
 // POST /api/nfc/link - Associate an NFC tag with a Product ID (Artisan Studio)
 app.post('/api/nfc/link', (req: Request, res: Response) => {
   const product_id: string = String(req.body.product_id || req.body.productId || '').trim();

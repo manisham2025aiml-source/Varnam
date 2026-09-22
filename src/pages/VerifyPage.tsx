@@ -23,10 +23,11 @@ import {
 import { Link } from 'react-router-dom';
 import { SmartStationVisualizer } from '../components/hardware/SmartStationVisualizer';
 import { InStoreNfcExperience } from '../components/verify/InStoreNfcExperience';
+import { LiveRfidScanner } from '../components/hardware/LiveRfidScanner';
 
 export const VerifyPage: React.FC = () => {
   const { addToDigitalLocker, showToast } = useVarnam();
-  const [activeTab, setActiveTab] = useState<'instore' | 'station' | 'nfc' | 'qr' | 'manual'>('instore');
+  const [activeTab, setActiveTab] = useState<'rfid' | 'instore' | 'station' | 'nfc' | 'qr' | 'manual'>('rfid');
   
   // Scanning state
   const [isScanning, setIsScanning] = useState(false);
@@ -99,6 +100,22 @@ export const VerifyPage: React.FC = () => {
           {/* Method Selector Tabs */}
           <div className="flex flex-wrap justify-center border-b border-stone-200 gap-2 sm:gap-6 pb-3">
             <button
+              onClick={() => setActiveTab('rfid')}
+              className={`pb-3 px-4 text-xs sm:text-sm font-bold tracking-wide transition flex items-center gap-2 border-b-2 ${
+                activeTab === 'rfid'
+                  ? 'border-[#C85A32] text-[#C85A32]'
+                  : 'border-transparent text-stone-500 hover:text-stone-900'
+              }`}
+            >
+              <Cpu className="w-4 h-4 text-[#C85A32] animate-pulse" />
+              <span>ESP32 + RC522 RFID</span>
+              <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-emerald-100 text-emerald-800 font-bold flex items-center gap-1">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                LIVE HARDWARE
+              </span>
+            </button>
+
+            <button
               onClick={() => setActiveTab('instore')}
               className={`pb-3 px-4 text-xs sm:text-sm font-bold tracking-wide transition flex items-center gap-2 border-b-2 ${
                 activeTab === 'instore'
@@ -160,6 +177,13 @@ export const VerifyPage: React.FC = () => {
               <span>Varnam ID Search</span>
             </button>
           </div>
+
+          {/* Mode: ESP32 + RC522 Real-time RFID Hardware Bridge */}
+          {activeTab === 'rfid' && (
+            <div className="animate-in fade-in duration-300">
+              <LiveRfidScanner />
+            </div>
+          )}
 
           {/* Mode 0: In-Store Buyer NFC Tap & Multilingual Story Panel */}
           {activeTab === 'instore' && (

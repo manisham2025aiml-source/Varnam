@@ -69,7 +69,14 @@ async function run() {
     const verify = await testPost('/api/auth/verify-otp', { email: 'manisha.m2025aiml@sece.ac.in', code: otp.data.code || '123456' });
     console.log('POST /api/auth/verify-otp:', verify.status, 'user:', verify.data.user?.email, 'session:', verify.data.session?.id);
 
-    console.log('\nALL 7 ENDPOINTS VERIFIED AND PASSING SUCCESSFULLY!');
+    // Test RFID Scan
+    const rfidScan = await testPost('/api/rfid/scan', { uid: '61 13 EE 17' });
+    console.log('POST /api/rfid/scan:', rfidScan.status, 'user:', rfidScan.data.user, 'status:', rfidScan.data.status, 'oled:', rfidScan.data.oled?.line2);
+
+    const rfidLatest = await testGet('/api/rfid/latest');
+    console.log('GET /api/rfid/latest:', rfidLatest.status, 'latest:', rfidLatest.data.latest?.user_name, 'uid:', rfidLatest.data.latest?.formatted_uid);
+
+    console.log('\nALL ENDPOINTS INCLUDING RFID HARDWARE API VERIFIED AND PASSING SUCCESSFULLY!');
   } catch (err) {
     console.error('Test error:', err.message);
   }

@@ -101,6 +101,36 @@ export interface NfcScanLog {
   timestamp: string;
 }
 
+export interface RfidCardRecord {
+  uid: string;              // Normalized hex string: "6113EE17" or "A1B2C3D4"
+  formatted_uid: string;    // Formatted hex string with spaces: "61 13 EE 17"
+  card_type: 'white_card' | 'blue_keychain' | 'custom';
+  user_name: string;
+  role: 'Artisan' | 'Customer' | 'Collector' | 'Inspector';
+  user_id?: string;
+  status: 'verified' | 'unverified';
+  craft_id?: string;
+  craft_name?: string;
+  registered_at: string;
+  last_scanned_at?: string;
+}
+
+export interface RfidScanEvent {
+  id: string;
+  uid: string;
+  formatted_uid: string;
+  user_name: string;
+  role: string;
+  status: 'verified' | 'unverified' | 'unknown';
+  craft_id?: string;
+  craft_name?: string;
+  device_id: string;
+  timestamp: string;
+  oled_line1: string;
+  oled_line2: string;
+  oled_line3: string;
+}
+
 interface DatabaseSchema {
   products: ProductRecord[];
   scans: NfcScanLog[];
@@ -111,7 +141,39 @@ interface DatabaseSchema {
   likes?: LikeRecord[];
   reviews?: ReviewRecord[];
   translations?: TranslationRecord[];
+  rfidCards?: RfidCardRecord[];
+  rfidScans?: RfidScanEvent[];
+  latestRfidScan?: RfidScanEvent | null;
 }
+
+export const INITIAL_RFID_CARDS: RfidCardRecord[] = [
+  {
+    uid: '6113EE17',
+    formatted_uid: '61 13 EE 17',
+    card_type: 'white_card',
+    user_name: 'Manisha',
+    role: 'Artisan',
+    user_id: 'usr-manisha-01',
+    status: 'verified',
+    craft_id: 'VN-0001',
+    craft_name: 'Anaimalai Split-Bamboo Heritage Basket',
+    registered_at: '2026-09-20T00:00:00Z',
+    last_scanned_at: '2026-09-22T09:45:00Z'
+  },
+  {
+    uid: 'A1B2C3D4',
+    formatted_uid: 'A1 B2 C3 D4',
+    card_type: 'blue_keychain',
+    user_name: 'Rajendran Sthapathi',
+    role: 'Artisan',
+    user_id: 'usr-rajendran-02',
+    status: 'verified',
+    craft_id: 'VN-0002',
+    craft_name: 'Swamimalai Bronze Nataraja',
+    registered_at: '2026-09-20T00:00:00Z',
+    last_scanned_at: '2026-09-22T09:50:00Z'
+  }
+];
 
 const INITIAL_PRODUCTS: ProductRecord[] = [
   {
@@ -891,6 +953,9 @@ class Database {
         parsed.likes = parsed.likes || INITIAL_LIKES;
         parsed.reviews = parsed.reviews || INITIAL_REVIEWS;
         parsed.translations = parsed.translations || INITIAL_TRANSLATIONS;
+        parsed.rfidCards = parsed.rfidCards || INITIAL_RFID_CARDS;
+        parsed.rfidScans = parsed.rfidScans || [];
+        parsed.latestRfidScan = parsed.latestRfidScan || null;
         return parsed;
       }
     } catch (e) {
@@ -906,7 +971,10 @@ class Database {
       authVerificationCodes: [],
       likes: INITIAL_LIKES,
       reviews: INITIAL_REVIEWS,
-      translations: INITIAL_TRANSLATIONS
+      translations: INITIAL_TRANSLATIONS,
+      rfidCards: INITIAL_RFID_CARDS,
+      rfidScans: [],
+      latestRfidScan: null
     };
     this.save(defaultData);
     return defaultData;
@@ -1219,6 +1287,114 @@ class Database {
     return record;
   }
 
+  // --- RFID Methods (ESP32 + RC522) ---
+  public normalizeUid(uid: string): { clean: string; formatted: string } {
+    const clean = String(uid || '').replace(/[^a-fA-F0-9]/g, '').toUpperCase();
+    const pairs = clean.match(/.{1,2}/g) || [clean];
+    const formatted = pairs.join(' ');
+    return { clean, formatted };
+  }
+
+  public getAllRfidCards(): RfidCardRecord[] {
+    this.data.rfidCards = this.data.rfidCards || INITIAL_RFID_CARDS;
+    return this.data.rfidCards;
+  }
+
+  public getLatestRfidScan(): RfidScanEvent | null {
+    return this.data.latestRfidScan || null;
+  }
+
+  public getRfidScans(limit = 20): RfidScanEvent[] {
+    this.data.rfidScans = this.data.rfidScans || [];
+    return this.data.rfidScans.slice(0, limit);
+  }
+
+  public handleRfidScan(rawUid: string, deviceId = 'VARNAM-ESP32-RC522'): RfidScanEvent {
+    this.data.rfidCards = this.data.rfidCards || INITIAL_RFID_CARDS;
+    this.data.rfidScans = this.data.rfidScans || [];
+
+    const { clean, formatted } = this.normalizeUid(rawUid);
+    const matchedCard = this.data.rfidCards.find(
+      c => c.uid.toUpperCase() === clean || c.formatted_uid.toUpperCase() === formatted
+    );
+
+    let event: RfidScanEvent;
+
+    if (matchedCard) {
+      matchedCard.last_scanned_at = new Date().toISOString();
+      event = {
+        id: `rfid-${Date.now()}`,
+        uid: clean,
+        formatted_uid: formatted,
+        user_name: matchedCard.user_name,
+        role: matchedCard.role,
+        status: matchedCard.status,
+        craft_id: matchedCard.craft_id,
+        craft_name: matchedCard.craft_name,
+        device_id: deviceId,
+        timestamp: new Date().toISOString(),
+        oled_line1: 'VARNAM',
+        oled_line2: `WELCOME ${matchedCard.user_name.toUpperCase()}`,
+        oled_line3: 'VERIFIED OK'
+      };
+    } else {
+      // Unknown RFID Card
+      event = {
+        id: `rfid-${Date.now()}`,
+        uid: clean,
+        formatted_uid: formatted,
+        user_name: 'Unknown User',
+        role: 'Guest',
+        status: 'unknown',
+        device_id: deviceId,
+        timestamp: new Date().toISOString(),
+        oled_line1: 'VARNAM',
+        oled_line2: 'UNKNOWN CARD',
+        oled_line3: formatted
+      };
+    }
+
+    this.data.latestRfidScan = event;
+    this.data.rfidScans.unshift(event);
+    if (this.data.rfidScans.length > 50) {
+      this.data.rfidScans = this.data.rfidScans.slice(0, 50);
+    }
+
+    this.save(this.data);
+    return event;
+  }
+
+  public registerRfidCard(card: Partial<RfidCardRecord> & { uid: string; user_name: string }): RfidCardRecord {
+    this.data.rfidCards = this.data.rfidCards || INITIAL_RFID_CARDS;
+    const { clean, formatted } = this.normalizeUid(card.uid);
+    const existingIndex = this.data.rfidCards.findIndex(
+      c => c.uid.toUpperCase() === clean || c.formatted_uid.toUpperCase() === formatted
+    );
+
+    const newRecord: RfidCardRecord = {
+      uid: clean,
+      formatted_uid: formatted,
+      card_type: card.card_type || 'custom',
+      user_name: card.user_name,
+      role: card.role || 'Artisan',
+      user_id: card.user_id || `usr-${clean.toLowerCase()}`,
+      status: card.status || 'verified',
+      craft_id: card.craft_id,
+      craft_name: card.craft_name,
+      registered_at: new Date().toISOString(),
+      last_scanned_at: new Date().toISOString()
+    };
+
+    if (existingIndex >= 0) {
+      this.data.rfidCards[existingIndex] = newRecord;
+    } else {
+      this.data.rfidCards.push(newRecord);
+    }
+
+    this.save(this.data);
+    return newRecord;
+  }
+
   // --- Convex Snapshot Explorer Export ---
   public getConvexSnapshotData() {
     return {
@@ -1230,7 +1406,9 @@ class Database {
       reviews: this.data.reviews || [],
       products: this.data.products || [],
       translations: this.data.translations || [],
-      scans: this.data.scans || []
+      scans: this.data.scans || [],
+      rfidCards: this.data.rfidCards || [],
+      rfidScans: this.data.rfidScans || []
     };
   }
 }
